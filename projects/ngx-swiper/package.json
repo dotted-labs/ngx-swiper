@@ -1,6 +1,25 @@
 {
-  "name": "ngx-swiper",
-  "version": "0.0.2",
+  "name": "@dotted-labs/ngx-swiper",
+  "version": "0.0.3",
+  "description": "Angular library for swiper/carousel components",
+  "author": "Sergio Rodriguez Gundin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ngx-swiper.git"
+  },
+  "homepage": "https://github.com/yourusername/ngx-swiper#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/ngx-swiper/issues"
+  },
+  "keywords": [
+    "angular",
+    "swiper",
+    "carousel",
+    "slider",
+    "typescript",
+    "component"
+  ],
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"
@@ -8,5 +27,8 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  }
 }

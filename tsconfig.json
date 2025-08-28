@@ -10,9 +10,9 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "ngx-swiper": [
+      "@ngx-swiper": [
         "./dist/ngx-swiper"
-      ]
+      ],
     },
     "skipLibCheck": true,
     "isolatedModules": true,
