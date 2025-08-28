@@ -1,6 +1,6 @@
 {
   "name": "@dotted-labs/ngx-swiper",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Angular library for swiper/carousel components",
   "author": "Sergio Rodriguez Gundin",
   "license": "MIT",

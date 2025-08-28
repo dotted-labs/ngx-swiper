@@ -1,15 +1,15 @@
 {
   "name": ".",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "demo": "ng serve ngx-swiper-demo",
-    "demo:build": "ng build ngx-swiper-demo",
-    "lib:build": "ng build ngx-swiper",
+    "ngx-swiper:demo": "ng serve ngx-swiper-demo",
+    "build:demo": "ng build ngx-swiper-demo",
+    "build:lib": "ng build ngx-swiper --project ngx-swiper",
     "lib:watch": "ng build ngx-swiper --watch"
   },
   "private": true,
