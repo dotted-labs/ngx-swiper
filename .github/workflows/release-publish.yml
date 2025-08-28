@@ -24,9 +24,9 @@ jobs:
         id: check
         run: |
           # Store the diff result without failing if nothing is found
-          DIFF_RESULT=$(git diff HEAD~1 HEAD -- projects/ngx-swipe/package.json | grep '"version":' || true)
+          DIFF_RESULT=$(git diff HEAD~1 HEAD -- projects/ngx-swiper/package.json | grep '"version":' || true)
           if [ -n "$DIFF_RESULT" ]; then
-            VERSION=$(grep '"version":' projects/ngx-swipe/package.json | sed 's/.*"version": "\(.*\)",/\1/')
+            VERSION=$(grep '"version":' projects/ngx-swiper/package.json | sed 's/.*"version": "\(.*\)",/\1/')
             echo "Version changed to: $VERSION"
             echo "version=$VERSION" >> $GITHUB_OUTPUT
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -67,8 +67,8 @@ jobs:
 
       - name: Publish to npm
         run: |
-          cp README.md dist/ngx-swipe/
-          cp LICENSE dist/ngx-swipe/
-          cd dist/ngx-swipe && npm publish --access public
+          cp README.md dist/ngx-swiper/
+          cp LICENSE dist/ngx-swiper/
+          cd dist/ngx-swiper && npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
